@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -15,13 +16,16 @@
   <main>
     <section>
       <h2>Heute</h2>
-      <p>– Aufgaben erledigen<br>– Kundenmeeting 15:00<br>– Bericht abschicken</p>
+      <ul id="task-list"></ul>
+    </section>
+    <section>
+      <input type="text" id="task-input" placeholder="Neue Aufgabe..." />
+      <button onclick="addTask()">➕ Hinzufügen</button>
     </section>
     <nav>
-      <button onclick="alert('Einstellungen')">⚙️ Einstellungen</button>
-      <button onclick="alert('Neues Briefing')">🆕 Neu</button>
+      <button onclick="showSettings()">⚙️ Einstellungen</button>
+      <button onclick="clearTasks()">🧹 Leeren</button>
     </nav>
   </main>
 </body>
 </html>
-
